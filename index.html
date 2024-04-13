@@ -8,17 +8,97 @@
             background-color: black;
             font-family: Arial;
             color: snow;
+            background-image: url("img1.png");
+            background-size: cover;
+            background-position: center;
         }
+
+        nav {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.80);
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .contenido {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            width: 50%;
+
+        }
+
+        .contenido img {
+            height: 90%;
+            max-height: 400px;
+            width: auto;
+        }
+
+        .info {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-decoration-line: underline;
+            margin: 0;
+        }
+
+        .envoltorio {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 30%;
+            margin-top: 10%;
+            background-color: rgba(0, 0, 0, 0.80);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        span {
+            color: hotpink;
+        }
+
     </style>
 </head>
 <body>
-<nav><a href=#h1>Inicio</a>
+<nav>
+    <a href=#h1>Inicio</a>
     <a href=#Catálogo>Catálogo</a>
-    <a href=#p>Contáctanos</a></nav>
-<h1>Por qué usar un mouse gamer?</h1>
-<p>Un mouse gamer es más que un mouse: sus características personalizables hacen que puedas obtener un rendimiento al
-    jugar de calidad profesional.</p>
+    <a href=#p>Contáctanos</a>
+</nav>
 
-<img src="" alt="Un jugador profesional usando un mouse gamer">
+<div class="envoltorio">
+    <div class="contenido">
+        <img src="img3.jpg" alt="Jugador profesional con mouse gamer">
+        <div class="info">
+            <h1>Por qué usar un mouse gamer?</h1>
+            <p>Un mouse gamer es más que un mouse: sus características personalizables hacen que puedas obtener un
+                rendimiento al
+                jugar de calidad profesional.</p>
+            <h2>Quieres saber más? <span>contáctanos!</span></h2>
+            <form action="">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="correo">Correo:</label><br>
+                <input type="text" id="correo" name="correo">
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
